@@ -1,4 +1,4 @@
-import { Brain, ChevronRight, BarChart, Users, Zap, CheckCircle2, ArrowRight } from "lucide-react";
+import { Brain, ChevronRight, BarChart, Users, Zap, CheckCircle2, ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -24,16 +24,16 @@ const Index = () => {
           <img 
             src="/lovable-uploads/9a34caea-fc56-4824-8161-ef0275cc4256.png" 
             alt="TechAssistant Logo" 
-            className="w-32 h-32 mx-auto mb-8"
+            className="w-48 h-32 mx-auto mb-8 object-contain"
           />
           <span className="bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-medium">
             The Future of AI Training is Here
           </span>
           <h1 className="mt-8 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            AI Training Solutions for Modern Businesses
+            AI Training Solutions for <span className="text-primary">Modern Businesses</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
-            Transform your business operations with our cutting-edge AI training programs. We specialize in helping organizations harness the power of artificial intelligence through comprehensive, tailored training solutions that drive innovation and growth.
+            Transform your business operations with our <span className="text-primary font-medium">cutting-edge AI training programs</span>. We specialize in helping organizations harness the power of artificial intelligence through comprehensive, tailored training solutions that drive innovation and growth.
           </p>
           <div className="mt-10 flex items-center justify-center gap-6">
             <Button className="group bg-primary hover:bg-primary/90" size="lg">
@@ -304,11 +304,31 @@ const Index = () => {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Ready to Transform Your Business?
+              Ready to <span className="text-primary">Transform Your Business</span>?
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Take the first step towards AI excellence. Our team of experts is ready to help you develop a customized training program that meets your specific needs and objectives.
+              Take the first step towards <span className="text-primary font-medium">AI excellence</span>. Our team of experts is ready to help you develop a customized training program that meets your specific needs and objectives.
             </p>
+            <div className="mt-8 space-y-4">
+              <div className="flex items-center justify-center gap-2 text-gray-600">
+                <div className="bg-primary/10 p-2 rounded-full">
+                  <Mail className="h-5 w-5 text-primary" />
+                </div>
+                <span>contact@techassistant.ai</span>
+              </div>
+              <div className="flex items-center justify-center gap-2 text-gray-600">
+                <div className="bg-primary/10 p-2 rounded-full">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div className="flex items-center justify-center gap-2 text-gray-600">
+                <div className="bg-primary/10 p-2 rounded-full">
+                  <MapPin className="h-5 w-5 text-primary" />
+                </div>
+                <span>123 Innovation Drive, Silicon Valley, CA 94025</span>
+              </div>
+            </div>
             <Button className="mt-8 bg-primary hover:bg-primary/90" size="lg">
               Contact Us
             </Button>
