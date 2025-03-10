@@ -1,4 +1,4 @@
-import { Brain, ChevronRight, BarChart, Users, Zap, CheckCircle2, ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+import { Brain, ChevronRight, BarChart, Users, Zap, CheckCircle2, ArrowRight, Mail, Phone, MapPin, Lock, Database, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -294,6 +294,127 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Blockchain Benefits Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <span className="text-primary">Blockchain Technology</span> for AI Training Excellence
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Discover how integrating blockchain technology with our AI training solutions can revolutionize your business operations and data management strategies.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="lg:pr-8"
+            >
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                How Blockchain <span className="text-cyan-500">Transforms</span> AI Training
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Our innovative approach combines the power of blockchain technology with advanced AI training methodologies to create a secure, transparent, and efficient ecosystem for your business intelligence needs.
+              </p>
+              
+              <div className="space-y-6">
+                {blockchainBenefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-lg">
+                      <benefit.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900">
+                        <span className="text-cyan-500">{benefit.title}</span>
+                      </h4>
+                      <p className="text-gray-600">{benefit.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="bg-sky-50 p-8 rounded-xl shadow-lg">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Blockchain Implementation <span className="text-cyan-500">Roadmap</span>
+                </h3>
+                
+                <div className="space-y-4 mt-6">
+                  {blockchainRoadmap.map((step, index) => (
+                    <div key={index} className="relative">
+                      <div className="flex items-center gap-4">
+                        <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+                          {index + 1}
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-medium text-gray-900">{step.title}</h4>
+                          <p className="text-sm text-gray-600">{step.description}</p>
+                        </div>
+                      </div>
+                      {index < blockchainRoadmap.length - 1 && (
+                        <div className="absolute left-5 top-10 h-full w-0.5 bg-primary/20"></div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-8">
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    <span className="text-cyan-500">ROI Potential</span>
+                  </h4>
+                  <p className="text-gray-600 text-sm mb-4">Businesses implementing our blockchain-enhanced AI training solutions report:</p>
+                  <div className="bg-white rounded-lg p-4">
+                    <div className="flex justify-between mb-2">
+                      <span className="text-gray-600">Data Security Improvement</span>
+                      <span className="font-bold text-primary">87%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 h-2 rounded-full">
+                      <div className="bg-primary h-2 rounded-full" style={{ width: "87%" }}></div>
+                    </div>
+                    
+                    <div className="flex justify-between mb-2 mt-4">
+                      <span className="text-gray-600">Operational Efficiency</span>
+                      <span className="font-bold text-primary">65%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 h-2 rounded-full">
+                      <div className="bg-primary h-2 rounded-full" style={{ width: "65%" }}></div>
+                    </div>
+                    
+                    <div className="flex justify-between mb-2 mt-4">
+                      <span className="text-gray-600">Cost Reduction</span>
+                      <span className="font-bold text-primary">42%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 h-2 rounded-full">
+                      <div className="bg-primary h-2 rounded-full" style={{ width: "42%" }}></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <Button className="bg-primary hover:bg-primary/90" size="lg">
+              Schedule a Blockchain Consultation
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -487,6 +608,48 @@ const benefits = [
     title: "Ongoing Support",
     description: "Access to continuous assistance, updates, and resources to ensure long-term success.",
   },
+];
+
+const blockchainBenefits = [
+  {
+    title: "Enhanced Data Security & Privacy",
+    description: "Blockchain's cryptographic security ensures that your AI training data remains tamper-proof and confidential, protecting sensitive business intelligence and customer information.",
+    icon: Lock
+  },
+  {
+    title: "Transparent Data Provenance",
+    description: "Establish clear ownership and history of AI training datasets, ensuring compliance with regulatory requirements and building trust with stakeholders through immutable record-keeping.",
+    icon: FileText
+  },
+  {
+    title: "Decentralized AI Model Training",
+    description: "Distribute your AI training processes across a secure blockchain network, reducing single points of failure and creating more resilient, scalable training infrastructure.",
+    icon: Database
+  },
+  {
+    title: "Smart Contract Automation",
+    description: "Leverage blockchain smart contracts to automate complex AI training workflows, reducing administrative overhead and ensuring consistent execution of business processes.",
+    icon: Zap
+  }
+];
+
+const blockchainRoadmap = [
+  {
+    title: "Assessment & Strategy Development",
+    description: "Comprehensive analysis of your existing infrastructure and development of a tailored blockchain integration strategy."
+  },
+  {
+    title: "Proof of Concept Implementation",
+    description: "Small-scale deployment of blockchain-enhanced AI training in a controlled environment to demonstrate value."
+  },
+  {
+    title: "Enterprise Integration",
+    description: "Full-scale integration of blockchain technology with your existing AI training systems and business processes."
+  },
+  {
+    title: "Continuous Optimization",
+    description: "Ongoing refinement of your blockchain-AI ecosystem to maximize efficiency, security, and return on investment."
+  }
 ];
 
 export default Index;
