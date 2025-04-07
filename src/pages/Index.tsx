@@ -1,4 +1,3 @@
-
 import { Brain, ChevronRight, BarChart, Users, Zap, CheckCircle2, ArrowRight, Mail, Phone, MapPin, Lock, Database, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -28,26 +27,27 @@ const Index = () => {
             className="w-48 h-32 mx-auto mb-8 object-contain"
           />
           <span className="bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-medium">
-            El Futur de la Formació en IA És Aquí
+            El Futuro de la Formación en IA Está Aquí
           </span>
           <h1 className="mt-8 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Solucions de Formació en IA per a <span className="text-primary">Empreses Modernes</span>
+            Soluciones de Formación en IA para <span className="text-primary">Empresas Modernas</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
-            Transforma les operacions del teu negoci amb els nostres <span className="text-primary font-medium">programes de formació en IA d'avantguarda</span>. Ens especialitzem en ajudar organitzacions a aprofitar el poder de la intel·ligència artificial mitjançant solucions de formació integrals i personalitzades que impulsen la innovació i el creixement.
+            Transforma las operaciones de tu negocio con nuestros <span className="text-primary font-medium">programas de formación en IA de vanguardia</span>. Nos especializamos en ayudar a organizaciones a aprovechar el poder de la inteligencia artificial mediante soluciones de formación integrales y personalizadas que impulsan la innovación y el crecimiento.
           </p>
           <div className="mt-10 flex items-center justify-center gap-6">
             <Button className="group bg-primary hover:bg-primary/90" size="lg">
-              Comença Ara
+              Comienza Ahora
               <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="outline" size="lg">
-              Més Informació
+              Más Información
             </Button>
           </div>
         </motion.div>
       </section>
 
+      {/* Rest of the code remains the same, just with Spanish translations */}
       {/* Training Process Section */}
       <section className="py-24 bg-sky-50">
         <div className="container mx-auto px-4">
@@ -58,10 +58,10 @@ const Index = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              El Nostre Procés de Formació
+              Nuestro Proceso de Formación
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Un enfocament sistemàtic per transformar el teu negoci mitjançant la implementació d'IA
+              Un enfoque sistemático para transformar tu negocio mediante la implementación de IA
             </p>
           </motion.div>
 
@@ -106,10 +106,10 @@ const Index = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Els Nostres Serveis
+              Nuestros Servicios
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Oferim un conjunt integral de solucions de formació en IA dissenyades per satisfer les teves necessitats específiques de la indústria i els objectius empresarials. Els nostres programes dirigits per experts asseguren que el teu equip es mantingui al capdavant en el panorama d'IA en ràpida evolució.
+              Ofrecemos un conjunto integral de soluciones de formación en IA diseñadas para satisfacer tus necesidades específicas de la industria y los objetivos empresariales. Nuestros programas dirigidos por expertos aseguran que tu equipo se mantenga a la vanguardia en el panorama de IA en rápida evolución.
             </p>
           </motion.div>
 
@@ -155,10 +155,10 @@ const Index = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Plans de Preus Transparents
+              Planes de Precios Transparentes
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Escull el pla perfecte per a les necessitats del teu negoci
+              Escoge el plan perfecto para las necesidades de tu negocio
             </p>
           </motion.div>
 
@@ -173,7 +173,7 @@ const Index = () => {
                 <Card className={`relative ${plan.featured ? 'border-primary shadow-lg' : ''}`}>
                   {plan.featured && (
                     <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm">
-                      Més Popular
+                      Más Popular
                     </span>
                   )}
                   <CardHeader>
@@ -196,7 +196,7 @@ const Index = () => {
                   </CardContent>
                   <CardFooter>
                     <Button className={`w-full ${plan.featured ? 'bg-primary' : ''}`}>
-                      Comença Ara
+                      Comienza Ahora
                     </Button>
                   </CardFooter>
                 </Card>
@@ -216,10 +216,10 @@ const Index = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Històries d'Èxit
+              Historias de Éxito
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Descobreix com les empreses s'han transformat amb les nostres solucions de formació en IA
+              Descubre cómo las empresas se han transformado con nuestras soluciones de formación en IA
             </p>
           </motion.div>
 
@@ -250,7 +250,7 @@ const Index = () => {
                         style={{ width: `${story.improvement}%` }}
                       />
                     </div>
-                    <p className="mt-2 text-sm text-gray-600">Millora d'Eficiència</p>
+                    <p className="mt-2 text-sm text-gray-600">Mejora de Eficiencia</p>
                   </div>
                 </div>
               </motion.div>
@@ -269,10 +269,10 @@ const Index = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Per Què Triar TechAssistant
+              Por Qué Elegir TechAssistant
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Uneix-te a centenars d'empreses que han transformat les seves operacions a través dels nostres programes de formació en IA integrals. El nostre enfocament combina experiència, innovació i implementació pràctica.
+              Únete a cientos de empresas que han transformado sus operaciones a través de nuestros programas de formación en IA integrales. Nuestro enfoque combina experiencia, innovación e implementación práctica.
             </p>
           </motion.div>
 
@@ -305,10 +305,10 @@ const Index = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              <span className="text-primary">Tecnologia Blockchain</span> per a l'Excel·lència en Formació d'IA
+              <span className="text-primary">Tecnología Blockchain</span> para la Excelencia en Formación de IA
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Descobreix com integrar la tecnologia blockchain amb les nostres solucions de formació d'IA pot revolucionar les operacions del teu negoci i les estratègies de gestió de dades.
+              Descubre cómo integrar la tecnología blockchain con nuestras soluciones de formación de IA puede revolucionar las operaciones de tu negocio y las estrategias de gestión de datos.
             </p>
           </motion.div>
 
@@ -320,10 +320,10 @@ const Index = () => {
               className="lg:pr-8"
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Com el Blockchain <span className="text-cyan-500">Transforma</span> la Formació en IA
+                Cómo el Blockchain <span className="text-cyan-500">Transforma</span> la Formación en IA
               </h3>
               <p className="text-gray-600 mb-6">
-                El nostre enfocament innovador combina el poder de la tecnologia blockchain amb metodologies avançades de formació en IA per crear un ecosistema segur, transparent i eficient per a les necessitats d'intel·ligència empresarial.
+                Nuestro enfoque innovador combina el poder de la tecnología blockchain con metodologías avanzadas de formación en IA para crear un ecosistema seguro, transparente y eficiente para las necesidades de inteligencia empresarial.
               </p>
               
               <div className="space-y-6">
@@ -351,7 +351,7 @@ const Index = () => {
             >
               <div className="bg-sky-50 p-8 rounded-xl shadow-lg">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Full de Ruta d'<span className="text-cyan-500">Implementació</span> del Blockchain
+                  Hoja de Ruta de <span className="text-cyan-500">Implementación</span> del Blockchain
                 </h3>
                 
                 <div className="space-y-4 mt-6">
@@ -377,10 +377,10 @@ const Index = () => {
                   <h4 className="font-semibold text-gray-900 mb-2">
                     <span className="text-cyan-500">Potencial de ROI</span>
                   </h4>
-                  <p className="text-gray-600 text-sm mb-4">Les empreses que implementen les nostres solucions de formació d'IA millorades amb blockchain informen:</p>
+                  <p className="text-gray-600 text-sm mb-4">Las empresas que implementan nuestras soluciones de formación de IA mejoradas con blockchain informan:</p>
                   <div className="bg-white rounded-lg p-4">
                     <div className="flex justify-between mb-2">
-                      <span className="text-gray-600">Millora en Seguretat de Dades</span>
+                      <span className="text-gray-600">Mejora en Seguridad de Datos</span>
                       <span className="font-bold text-primary">87%</span>
                     </div>
                     <div className="w-full bg-gray-200 h-2 rounded-full">
@@ -388,7 +388,7 @@ const Index = () => {
                     </div>
                     
                     <div className="flex justify-between mb-2 mt-4">
-                      <span className="text-gray-600">Eficiència Operativa</span>
+                      <span className="text-gray-600">Eficiencia Operativa</span>
                       <span className="font-bold text-primary">65%</span>
                     </div>
                     <div className="w-full bg-gray-200 h-2 rounded-full">
@@ -396,7 +396,7 @@ const Index = () => {
                     </div>
                     
                     <div className="flex justify-between mb-2 mt-4">
-                      <span className="text-gray-600">Reducció de Costos</span>
+                      <span className="text-gray-600">Reducción de Costos</span>
                       <span className="font-bold text-primary">42%</span>
                     </div>
                     <div className="w-full bg-gray-200 h-2 rounded-full">
@@ -426,17 +426,17 @@ const Index = () => {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Preparat per <span className="text-primary">Transformar el teu Negoci</span>?
+              ¿Preparado para <span className="text-primary">Transformar tu Negocio</span>?
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Fes el primer pas cap a l'<span className="text-primary font-medium">excel·lència en IA</span>. El nostre equip d'experts està preparat per ajudar-te a desenvolupar un programa de formació personalitzat que satisfaci les teves necessitats i objectius específics.
+              Da el primer paso hacia la <span className="text-primary font-medium">excelencia en IA</span>. Nuestro equipo de expertos está preparado para ayudarte a desarrollar un programa de formación personalizado que satisfaga tus necesidades y objetivos específicos.
             </p>
             <div className="mt-8 space-y-4">
               <div className="flex items-center justify-center gap-2 text-gray-600">
                 <div className="bg-primary/10 p-2 rounded-full">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
-                <span>contacte@techassistant.ai</span>
+                <span>contacto@techassistant.ai</span>
               </div>
               <div className="flex items-center justify-center gap-2 text-gray-600">
                 <div className="bg-primary/10 p-2 rounded-full">
@@ -452,7 +452,7 @@ const Index = () => {
               </div>
             </div>
             <Button className="mt-8 bg-primary hover:bg-primary/90" size="lg">
-              Contacta'ns
+              Contáctanos
             </Button>
           </motion.div>
         </div>
@@ -463,63 +463,63 @@ const Index = () => {
 
 const trainingProcess = [
   {
-    title: "Avaluació",
-    description: "Analitzem les necessitats del teu negoci i les capacitats actuals d'IA per crear un pla de formació personalitzat.",
+    title: "Evaluación",
+    description: "Analizamos las necesidades de tu negocio y las capacidades actuales de IA para crear un plan de formación personalizado.",
   },
   {
-    title: "Planificació",
-    description: "Desenvolupem un currículum estructurat adaptat al nivell d'habilitat i objectius empresarials del teu equip.",
+    title: "Planificación",
+    description: "Desarrollamos un currículum estructurado adaptado al nivel de habilidad y objetivos empresariales de tu equipo.",
   },
   {
-    title: "Implementació",
-    description: "Sessions de formació pràctiques amb exercicis pràctics i aplicacions al món real.",
+    title: "Implementación",
+    description: "Sesiones de formación prácticas con ejercicios prácticos y aplicaciones del mundo real.",
   },
   {
-    title: "Avaluació",
-    description: "Mesurem el progrés i ajustem el programa per garantir resultats òptims i ROI.",
+    title: "Evaluación",
+    description: "Medimos el progreso y ajustamos el programa para garantizar resultados óptimos y ROI.",
   },
 ];
 
 const pricingPlans = [
   {
     title: "Inicial",
-    description: "Perfecte per a petits equips que comencen amb IA",
+    description: "Perfecto para pequeños equipos que comienzan con IA",
     price: 999,
     featured: false,
     features: [
-      "Fins a 5 membres d'equip",
-      "Mòduls bàsics de formació en IA",
-      "Informes de progrés mensuals",
-      "Suport per correu electrònic",
-      "Accés a recursos d'aprenentatge",
+      "Hasta 5 miembros de equipo",
+      "Módulos básicos de formación en IA",
+      "Informes de progreso mensuales",
+      "Soporte por correo electrónico",
+      "Acceso a recursos de aprendizaje",
     ],
   },
   {
-    title: "Professional",
-    description: "Ideal per a negocis en creixement",
+    title: "Profesional",
+    description: "Ideal para negocios en crecimiento",
     price: 1999,
     featured: true,
     features: [
-      "Fins a 15 membres d'equip",
-      "Mòduls avançats de formació en IA",
-      "Informes de progrés setmanals",
-      "Suport prioritari",
-      "Itineraris d'aprenentatge personalitzats",
-      "Sessions de tutoria individuals",
+      "Hasta 15 miembros de equipo",
+      "Módulos avanzados de formación en IA",
+      "Informes de progreso semanales",
+      "Soporte prioritario",
+      "Itinerarios de aprendizaje personalizados",
+      "Sesiones de tutoría individuales",
     ],
   },
   {
     title: "Empresarial",
-    description: "Solució completa per a grans organitzacions",
+    description: "Solución completa para grandes organizaciones",
     price: 4999,
     featured: false,
     features: [
-      "Membres d'equip il·limitats",
-      "Accés complet al currículum d'IA",
-      "Seguiment diari del progrés",
-      "Suport dedicat 24/7",
-      "Desenvolupament de contingut personalitzat",
-      "Formació in situ disponible",
+      "Miembros de equipo ilimitados",
+      "Acceso completo al currículum de IA",
+      "Seguimiento diario del progreso",
+      "Soporte dedicado 24/7",
+      "Desarrollo de contenido personalizado",
+      "Formación in situ disponible",
     ],
   },
 ];
@@ -527,131 +527,130 @@ const pricingPlans = [
 const successStories = [
   {
     company: "TechCorp Solutions",
-    industry: "Desenvolupament de Software",
+    industry: "Desarrollo de Software",
     improvement: 85,
-    testimonial: "El programa de formació de TechAssistant ens va ajudar a implementar solucions d'IA que van reduir el nostre cicle de desenvolupament en un 60% i van millorar significativament la qualitat del codi.",
+    testimonial: "El programa de formación de TechAssistant nos ayudó a implementar soluciones de IA que redujeron nuestro ciclo de desarrollo en un 60% y mejoraron significativamente la calidad del código.",
   },
   {
     company: "Global Logistics Inc.",
-    industry: "Gestió de la Cadena de Subministrament",
+    industry: "Gestión de la Cadena de Suministro",
     improvement: 75,
-    testimonial: "Després d'implementar solucions d'IA apreses a través de TechAssistant, hem vist una millora del 75% en les prediccions de temps d'entrega i en la gestió d'inventari.",
+    testimonial: "Después de implementar soluciones de IA aprendidas a través de TechAssistant, hemos visto una mejora del 75% en las predicciones de tiempo de entrega y en la gestión de inventario.",
   },
   {
     company: "FinanceFirst",
-    industry: "Serveis Financers",
+    industry: "Servicios Financieros",
     improvement: 90,
-    testimonial: "El programa de formació en IA va transformar el nostre procés d'avaluació de riscos, el que va portar a un 90% més de rapidesa en l'anàlisi i prediccions més precises.",
+    testimonial: "El programa de formación en IA transformó nuestro proceso de evaluación de riesgos, lo que llevó a un 90% más de rapidez en el análisis y predicciones más precisas.",
   },
   {
     company: "HealthCare Plus",
     industry: "Sanitat",
     improvement: 80,
-    testimonial: "La formació de TechAssistant ens va ajudar a implementar eines de diagnòstic d'IA, el que va resultar en un 80% més de rapidesa en l'avaluació de pacients i una millor precisió.",
+    testimonial: "La formación de TechAssistant nos ayudó a implementar herramientas de diagnóstico de IA, lo que resultó en un 80% más de rapidez en la evaluación de pacientes y una mejor precisión.",
   },
 ];
 
 const services = [
   {
-    title: "Programes Personalitzats de Formació en IA",
-    description: "Solucions de formació a mida dissenyades específicament per a les necessitats del teu negoci i els requisits de la teva indústria.",
+    title: "Programas Personalizados de Formación en IA",
+    description: "Soluciones de formación a medida diseñadas específicamente para las necesidades de tu negocio y los requisitos de tu industria.",
     icon: Brain,
     features: [
-      "Desenvolupament de currículum personalitzat",
-      "Exercicis pràctics",
-      "Estudis de casos específics de la indústria",
+      "Desarrollo de currículum personalizado",
+      "Ejercicios prácticos",
+      "Estudios de casos específicos de la industria",
     ],
   },
   {
-    title: "Analítica de Rendiment",
-    description: "Segueix i mesura l'impacte de la implementació d'IA amb analítiques i informes integrals.",
+    title: "Analítica de Rendimiento",
+    description: "Sigue y mide el impacto de la implementación de IA con analíticas e informes integrales.",
     icon: BarChart,
     features: [
-      "Seguiment del progrés en temps real",
-      "Benchmarking de rendiment",
-      "Eines de mesurament de ROI",
+      "Seguimiento del progreso en tiempo real",
+      "Benchmarking de rendimiento",
+      "Herramientas de medición de ROI",
     ],
   },
   {
-    title: "Tallers d'Equip",
-    description: "Tallers interactius per construir la confiança i l'experiència del teu equip en tecnologies d'IA.",
+    title: "Talleres de Equipo",
+    description: "Talleres interactivos para construir la confianza y la experiencia de tu equipo en tecnologías de IA.",
     icon: Users,
     features: [
-      "Sessions de formació en viu",
-      "Exercicis en grup",
-      "Aprenentatge col·laboratiu",
+      "Sesiones de formación en vivo",
+      "Ejercicios en grupo",
+      "Aprendizaje colaborativo",
     ],
   },
 ];
 
 const benefits = [
   {
-    title: "Major Eficiència",
-    description: "Optimitza les operacions i redueix el treball manual mitjançant l'automatització d'IA, estalviant fins a un 40% en costos operacionals.",
+    title: "Mayor Eficiencia",
+    description: "Optimiza las operaciones y reduce el trabajo manual mediante la automatización de IA, ahorrando hasta un 40% en costos operacionales.",
   },
   {
-    title: "Orientació Experta",
-    description: "Aprèn d'experts de la indústria amb historials provats en implementació d'IA en diversos sectors.",
+    title: "Orientación Experta",
+    description: "Aprende de expertos de la industria con historiales probados en implementación de IA en diversos sectores.",
   },
   {
-    title: "Avantatge Competitiu",
-    description: "Mantén-te al capdavant de la competència amb tecnologies d'IA d'avantguarda i estratègies d'implementació.",
+    title: "Ventaja Competitiva",
+    description: "Mantente a la vanguardia de la competencia con tecnologías de IA de vanguardia y estrategias de implementación.",
   },
   {
-    title: "Solucions Escalables",
-    description: "Els nostres programes de formació creixen amb el teu negoci, adaptant-se a nous reptes i oportunitats.",
+    title: "Soluciones Escalables",
+    description: "Nuestros programas de formación crecen con tu negocio, adaptándose a nuevos retos y oportunidades.",
   },
   {
-    title: "Enfocament en ROI",
-    description: "Programes de formació dissenyats per oferir resultats empresarials mesurables i millores tangibles.",
+    title: "Enfoque en ROI",
+    description: "Programas de formación diseñados para ofrecer resultados empresariales medibles y mejoras tangibles.",
   },
   {
-    title: "Suport Continu",
-    description: "Accés a assistència contínua, actualitzacions i recursos per garantir l'èxit a llarg termini.",
+    title: "Soporte Continuo",
+    description: "Acceso a asistencia continua, actualizaciones y recursos para garantizar el éxito a largo plazo.",
   },
 ];
 
 const blockchainBenefits = [
   {
-    title: "Seguretat i Privacitat de Dades Millorades",
-    description: "La seguretat criptogràfica del blockchain garanteix que les teves dades de formació en IA romanen a prova de manipulacions i confidencials, protegint la intel·ligència empresarial sensible i la informació dels clients.",
+    title: "Seguridad y Privacidad de Datos Mejoradas",
+    description: "La seguridad criptográfica del blockchain garantiza que tus datos de formación en IA permanecen a prueba de manipulaciones y confidenciales, protegiendo la inteligencia empresarial sensible y la información de los clientes.",
     icon: Lock
   },
   {
-    title: "Procedència de Dades Transparent",
-    description: "Estableix una propietat clara i un historial dels conjunts de dades de formació d'IA, assegurant el compliment dels requisits normatius i creant confiança amb les parts interessades a través de registres immutables.",
+    title: "Procedencia de Datos Transparente",
+    description: "Establece una propiedad clara y un historial de los conjuntos de datos de formación de IA, asegurando el cumplimiento de los requisitos normativos y creando confianza con las partes interesadas a través de registros inmutables.",
     icon: FileText
   },
   {
-    title: "Formació Descentralitzada de Models d'IA",
-    description: "Distribueix els teus processos de formació d'IA a través d'una xarxa blockchain segura, reduint els punts únics de fallada i creant una infraestructura de formació més resilient i escalable.",
+    title: "Formación Descentralizada de Modelos de IA",
+    description: "Distribuye tus procesos de formación de IA a través de una red blockchain segura, reduciendo los puntos únicos de fallo y creando una infraestructura de formación más resiliente y escalable.",
     icon: Database
   },
   {
-    title: "Automatització amb Contractes Intel·ligents",
-    description: "Aprofita els contractes intel·ligents de blockchain per automatitzar fluxos de treball complexos de formació d'IA, reduint la càrrega administrativa i assegurant una execució consistent dels processos empresarials.",
+    title: "Automatización con Contratos Inteligentes",
+    description: "Aprovecha los contratos inteligentes de blockchain para automatizar flujos de trabajo complejos de formación de IA, reduciendo la carga administrativa y asegurando una ejecución consistente de los procesos empresariales.",
     icon: Zap
   }
 ];
 
 const blockchainRoadmap = [
   {
-    title: "Avaluació i Desenvolupament d'Estratègia",
-    description: "Anàlisi integral de la teva infraestructura existent i desenvolupament d'una estratègia d'integració de blockchain a mida."
+    title: "Evaluación y Desarrollo de Estrategia",
+    description: "Análisis integral de tu infraestructura existente y desarrollo de una estrategia de integración de blockchain a medida."
   },
   {
-    title: "Implementació de Prova de Concepte",
-    description: "Desplegament a petita escala de formació d'IA millorada amb blockchain en un entorn controlat per demostrar valor."
+    title: "Implementación de Prueba de Concepto",
+    description: "Despliegue a pequeña escala de formación de IA mejorada con blockchain en un entorno controlado para demostrar valor."
   },
   {
-    title: "Integració Empresarial",
-    description: "Integració a escala completa de la tecnologia blockchain amb els teus sistemes existents de formació d'IA i processos empresarials."
+    title: "Integración Empresarial",
+    description: "Integración a escala completa de la tecnología blockchain con tus sistemas existentes de formación de IA y procesos empresariales."
   },
   {
-    title: "Optimització Contínua",
-    description: "Refinament continu del teu ecosistema blockchain-IA per maximitzar l'eficiència, la seguretat i el retorn de la inversió."
+    title: "Optimización Continua",
+    description: "Refinamiento continuo de tu ecosistema blockchain-IA para maximizar la eficiencia, la seguridad y el retorno de la inversión."
   }
 ];
 
 export default Index;
-
