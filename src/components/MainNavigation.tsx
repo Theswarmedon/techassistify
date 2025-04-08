@@ -91,16 +91,16 @@ const MainNavigation = () => {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 w-[400px] md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              <ListItem href="#" title="Formaciones Básicas">
+              <ListItem href="/formaciones-basicas" title="Formaciones Básicas">
                 Programas introductorios para equipos que comienzan con IA.
               </ListItem>
-              <ListItem href="#" title="Cursos Avanzados">
+              <ListItem href="/cursos-avanzados" title="Cursos Avanzados">
                 Formación especializada para profesionales técnicos.
               </ListItem>
-              <ListItem href="#" title="Soluciones Empresariales">
+              <ListItem href="/soluciones-empresariales" title="Soluciones Empresariales">
                 Programas personalizados para grandes organizaciones.
               </ListItem>
-              <ListItem href="#" title="Asesorías">
+              <ListItem href="/asesorias" title="Asesorías">
                 Consultoría estratégica para implementación de IA.
               </ListItem>
             </ul>
