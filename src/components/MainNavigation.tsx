@@ -35,9 +35,9 @@ const MainNavigation = () => {
             <ul className="grid gap-3 p-6 w-[400px] md:grid-cols-2">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
-                  <a
+                  <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 no-underline outline-none focus:shadow-md"
-                    href="#"
+                    to="/quienes-somos"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium text-white">
                       Nuestra Misión
@@ -45,16 +45,16 @@ const MainNavigation = () => {
                     <p className="text-sm leading-tight text-white/90">
                       Transformamos la formación en IA para empresas con soluciones personalizadas y efectivas.
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="#" title="Nuestro Equipo">
+              <ListItem href="/nuestro-equipo" title="Nuestro Equipo">
                 Conozca a nuestros expertos en IA y formación empresarial.
               </ListItem>
-              <ListItem href="#" title="Historia">
+              <ListItem href="/nuestra-historia" title="Historia">
                 Más de una década de innovación en el sector tecnológico.
               </ListItem>
-              <ListItem href="#" title="Valores">
+              <ListItem href="/nuestros-valores" title="Valores">
                 Excelencia, innovación y compromiso con los resultados.
               </ListItem>
             </ul>
@@ -139,19 +139,20 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
-          ref={ref}
+        <Link
+          to={props.href || "#"}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}
+          ref={ref}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );

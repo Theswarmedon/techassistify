@@ -3,6 +3,8 @@ import React from 'react';
 import MainNavigation from '@/components/MainNavigation';
 import { Users, BookOpen, Briefcase, PackageOpen } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const QuienesSomos = () => {
   return (
@@ -28,9 +30,16 @@ const QuienesSomos = () => {
               <p className="mb-4">
                 Nuestra misión es democratizar el acceso a la IA proporcionando soluciones de formación personalizadas que permitan a las empresas aprovechar el poder de estas tecnologías de manera efectiva y ética.
               </p>
-              <p>
+              <p className="mb-4">
                 Con más de 5 años de experiencia en el sector, hemos ayudado a más de 200 empresas a implementar soluciones basadas en IA que han transformado sus operaciones y mejorado su competitividad.
               </p>
+              <div className="flex justify-center mt-6">
+                <Button asChild>
+                  <Link to="/nuestra-mision">
+                    Conoce nuestra misión
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -79,6 +88,13 @@ const QuienesSomos = () => {
                   </p>
                 </CardContent>
               </Card>
+            </div>
+            <div className="flex justify-center mt-6">
+              <Button asChild>
+                <Link to="/nuestro-equipo">
+                  Conoce a todo nuestro equipo
+                </Link>
+              </Button>
             </div>
           </div>
 
@@ -130,6 +146,26 @@ const QuienesSomos = () => {
                 </p>
               </div>
             </div>
+            <div className="flex justify-center mt-6">
+              <Button asChild>
+                <Link to="/nuestros-valores">
+                  Explora nuestros valores
+                </Link>
+              </Button>
+            </div>
+          </div>
+          
+          <div className="flex justify-center gap-4 mt-10">
+            <Button asChild variant="outline">
+              <Link to="/nuestra-historia">
+                Conoce nuestra historia
+              </Link>
+            </Button>
+            <Button asChild>
+              <Link to="/formulario">
+                Contacta con nosotros
+              </Link>
+            </Button>
           </div>
         </div>
       </main>
