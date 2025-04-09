@@ -44,6 +44,14 @@ const BlogCard = ({ id, title, excerpt, date, author, imageUrl }: BlogPostProps)
             <CalendarDays size={14} />
             <span>{date}</span>
           </div>
+          <div className="ml-auto">
+            <Link 
+              to={`/blog/${id}`}
+              className="text-primary hover:underline"
+            >
+              Leer más
+            </Link>
+          </div>
         </div>
       </CardFooter>
     </Card>

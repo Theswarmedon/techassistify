@@ -11,6 +11,7 @@ import ComoTrabajamos from "./pages/ComoTrabajamos";
 import Productos from "./pages/Productos";
 import Formulario from "./pages/Formulario";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NuestraMision from "./pages/NuestraMision";
 import NuestroEquipo from "./pages/NuestroEquipo";
 import NuestraHistoria from "./pages/NuestraHistoria";
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/productos" element={<Productos />} />
           <Route path="/formulario" element={<Formulario />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:postId" element={<BlogPost />} />
           <Route path="/checkout" element={<Checkout />} />
           
           {/* Rutas para las secciones de Quiénes Somos */}

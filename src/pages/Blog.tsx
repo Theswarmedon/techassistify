@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import MainNavigation from '@/components/MainNavigation';
 import BlogCard from '@/components/BlogCard';
+import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
 import {
   Pagination,
   PaginationContent,
@@ -88,9 +90,18 @@ const Blog = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold mb-3 text-center">Nuestro Blog</h1>
-          <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 mb-8 text-center max-w-3xl mx-auto">
             Artículos, noticias y recursos sobre IA y formación empresarial
           </p>
+          
+          <div className="flex justify-center mb-12">
+            <Link to="/formulario">
+              <Button variant="outline" className="mx-2">Solicitar contenido personalizado</Button>
+            </Link>
+            <Link to="/checkout">
+              <Button className="mx-2">Acceder a contenido premium</Button>
+            </Link>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {currentPosts.map((post) => (
@@ -143,6 +154,19 @@ const Blog = () => {
               </Pagination>
             </div>
           )}
+          
+          <div className="text-center mt-16 py-8">
+            <h3 className="text-xl font-bold mb-4">¿Te interesa mejorar la formación en tu empresa?</h3>
+            <p className="mb-6">Descubre cómo nuestras soluciones de IA pueden transformar el aprendizaje en tu organización</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/checkout">
+                <Button size="lg">Comienza ahora</Button>
+              </Link>
+              <Link to="/formulario">
+                <Button variant="outline" size="lg">Contáctanos</Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </main>
     </div>
