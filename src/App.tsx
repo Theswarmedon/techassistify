@@ -19,6 +19,10 @@ import FormacionesBasicas from "./pages/FormacionesBasicas";
 import CursosAvanzados from "./pages/CursosAvanzados";
 import SolucionesEmpresariales from "./pages/SolucionesEmpresariales";
 import Asesorias from "./pages/Asesorias";
+import Metodologia from "./pages/Metodologia";
+import Tecnologias from "./pages/Tecnologias";
+import CasosExito from "./pages/CasosExito";
+import ProcesoTrabajo from "./pages/ProcesoTrabajo";
 
 const queryClient = new QueryClient();
 
@@ -36,17 +40,23 @@ const App = () => (
           <Route path="/formulario" element={<Formulario />} />
           <Route path="/blog" element={<Blog />} />
           
-          {/* Nuevas rutas para las secciones de Quiénes Somos */}
+          {/* Rutas para las secciones de Quiénes Somos */}
           <Route path="/nuestra-mision" element={<NuestraMision />} />
           <Route path="/nuestro-equipo" element={<NuestroEquipo />} />
           <Route path="/nuestra-historia" element={<NuestraHistoria />} />
           <Route path="/nuestros-valores" element={<NuestrosValores />} />
           
-          {/* Nuevas rutas para las secciones de Productos */}
+          {/* Rutas para las secciones de Productos */}
           <Route path="/formaciones-basicas" element={<FormacionesBasicas />} />
           <Route path="/cursos-avanzados" element={<CursosAvanzados />} />
           <Route path="/soluciones-empresariales" element={<SolucionesEmpresariales />} />
           <Route path="/asesorias" element={<Asesorias />} />
+          
+          {/* Nuevas rutas para las secciones de Cómo Trabajamos */}
+          <Route path="/metodologia" element={<Metodologia />} />
+          <Route path="/tecnologias" element={<Tecnologias />} />
+          <Route path="/casos-exito" element={<CasosExito />} />
+          <Route path="/proceso-trabajo" element={<ProcesoTrabajo />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

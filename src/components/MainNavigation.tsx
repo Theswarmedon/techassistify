@@ -68,16 +68,16 @@ const MainNavigation = () => {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              <ListItem href="#" title="Metodología">
+              <ListItem href="/metodologia" title="Metodología">
                 Nuestro enfoque de 4 pasos: Evaluación, Planificación, Implementación y Evaluación.
               </ListItem>
-              <ListItem href="#" title="Tecnologías">
+              <ListItem href="/tecnologias" title="Tecnologías">
                 Utilizamos las últimas tecnologías en IA y blockchain para potenciar tu negocio.
               </ListItem>
-              <ListItem href="#" title="Casos de Éxito">
+              <ListItem href="/casos-exito" title="Casos de Éxito">
                 Descubre cómo hemos ayudado a empresas como la tuya a transformarse.
               </ListItem>
-              <ListItem href="#" title="Proceso de Trabajo">
+              <ListItem href="/proceso-trabajo" title="Proceso de Trabajo">
                 Un recorrido detallado por nuestro proceso de implementación y formación.
               </ListItem>
             </ul>
