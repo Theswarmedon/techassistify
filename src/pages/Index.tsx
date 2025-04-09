@@ -1,6 +1,7 @@
 import { Brain, ChevronRight, BarChart, Users, Zap, CheckCircle2, ArrowRight, Mail, Phone, MapPin, Lock, Database, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -43,13 +44,17 @@ const Index = () => {
             Transforma las operaciones de tu negocio con nuestros <span className="text-primary font-medium">programas de formación en IA de vanguardia</span>. Nos especializamos en ayudar a organizaciones a aprovechar el poder de la inteligencia artificial mediante soluciones de formación integrales y personalizadas que impulsan la innovación y el crecimiento.
           </p>
           <div className="mt-10 flex items-center justify-center gap-6">
-            <Button className="group bg-primary hover:bg-primary/90" size="lg">
-              Comienza Ahora
-              <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Más Información
-            </Button>
+            <Link to="/checkout">
+              <Button className="group bg-primary hover:bg-primary/90" size="lg">
+                Comienza Ahora
+                <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link to="/quienes-somos">
+              <Button variant="outline" size="lg">
+                Más Información
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </section>
@@ -201,9 +206,11 @@ const Index = () => {
                     </ul>
                   </CardContent>
                   <CardFooter>
-                    <Button className={`w-full ${plan.featured ? 'bg-primary' : ''}`}>
-                      Comienza Ahora
-                    </Button>
+                    <Link to="/checkout" className="w-full">
+                      <Button className={`w-full ${plan.featured ? 'bg-primary' : ''}`}>
+                        Comienza Ahora
+                      </Button>
+                    </Link>
                   </CardFooter>
                 </Card>
               </motion.div>
@@ -415,9 +422,11 @@ const Index = () => {
           </div>
           
           <div className="mt-16 text-center">
-            <Button className="bg-primary hover:bg-primary/90" size="lg">
-              Programa una Consulta de Blockchain
-            </Button>
+            <Link to="/checkout">
+              <Button className="bg-primary hover:bg-primary/90" size="lg">
+                Programa una Consulta de Blockchain
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -457,9 +466,11 @@ const Index = () => {
                 <span>123 Innovation Drive, Silicon Valley, CA 94025</span>
               </div>
             </div>
-            <Button className="mt-8 bg-primary hover:bg-primary/90" size="lg">
-              Contáctanos
-            </Button>
+            <Link to="/formulario">
+              <Button className="mt-8 bg-primary hover:bg-primary/90" size="lg">
+                Contáctanos
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -490,7 +501,7 @@ const pricingPlans = [
   {
     title: "Inicial",
     description: "Perfecto para pequeños equipos que comienzan con IA",
-    price: 999,
+    price: 49,
     featured: false,
     features: [
       "Hasta 5 miembros de equipo",
@@ -503,7 +514,7 @@ const pricingPlans = [
   {
     title: "Profesional",
     description: "Ideal para negocios en crecimiento",
-    price: 1999,
+    price: 99,
     featured: true,
     features: [
       "Hasta 15 miembros de equipo",
@@ -517,7 +528,7 @@ const pricingPlans = [
   {
     title: "Empresarial",
     description: "Solución completa para grandes organizaciones",
-    price: 4999,
+    price: 249,
     featured: false,
     features: [
       "Miembros de equipo ilimitados",

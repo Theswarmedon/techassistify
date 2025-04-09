@@ -4,6 +4,7 @@ import MainNavigation from '@/components/MainNavigation';
 import { BookOpen, Users, Briefcase, PackageOpen, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Productos = () => {
   return (
@@ -64,7 +65,7 @@ const Productos = () => {
                   <div className="text-white text-center">
                     <BookOpen size={60} className="mx-auto mb-4" />
                     <h3 className="text-2xl font-bold">IA Fundamentals</h3>
-                    <div className="mt-4 text-xl font-bold">Desde 1.200€</div>
+                    <div className="mt-4 text-xl font-bold">Desde 299€</div>
                   </div>
                 </div>
                 <div className="md:w-2/3 p-8">
@@ -90,7 +91,9 @@ const Productos = () => {
                       <span>Certificación al finalizar</span>
                     </li>
                   </ul>
-                  <Button>Solicitar información</Button>
+                  <Link to="/checkout">
+                    <Button>Solicitar información</Button>
+                  </Link>
                 </div>
               </div>
             </Card>
@@ -102,7 +105,7 @@ const Productos = () => {
                   <div className="text-white text-center">
                     <Users size={60} className="mx-auto mb-4" />
                     <h3 className="text-2xl font-bold">AI Developer Pro</h3>
-                    <div className="mt-4 text-xl font-bold">Desde 2.500€</div>
+                    <div className="mt-4 text-xl font-bold">Desde 599€</div>
                   </div>
                 </div>
                 <div className="md:w-2/3 p-8">
@@ -128,7 +131,9 @@ const Productos = () => {
                       <span>Mentorías personalizadas</span>
                     </li>
                   </ul>
-                  <Button>Solicitar información</Button>
+                  <Link to="/checkout">
+                    <Button>Solicitar información</Button>
+                  </Link>
                 </div>
               </div>
             </Card>
@@ -140,7 +145,7 @@ const Productos = () => {
                   <div className="text-white text-center">
                     <Briefcase size={60} className="mx-auto mb-4" />
                     <h3 className="text-2xl font-bold">Enterprise AI</h3>
-                    <div className="mt-4 text-xl font-bold">Personalizado</div>
+                    <div className="mt-4 text-xl font-bold">Desde 899€</div>
                   </div>
                 </div>
                 <div className="md:w-2/3 p-8">
@@ -166,7 +171,9 @@ const Productos = () => {
                       <span>Seguimiento y optimización continua</span>
                     </li>
                   </ul>
-                  <Button>Solicitar información</Button>
+                  <Link to="/checkout">
+                    <Button>Solicitar información</Button>
+                  </Link>
                 </div>
               </div>
             </Card>
@@ -292,9 +299,11 @@ const Productos = () => {
             <p className="mb-6 max-w-2xl mx-auto">
               Contacta con nuestro equipo para recibir asesoramiento personalizado y descubrir qué solución se adapta mejor a las necesidades de tu organización.
             </p>
-            <Button className="bg-white text-blue-700 hover:bg-gray-100">
-              Contactar ahora
-            </Button>
+            <Link to="/checkout">
+              <Button className="bg-white text-blue-700 hover:bg-gray-100">
+                Contactar ahora
+              </Button>
+            </Link>
           </div>
         </div>
       </main>

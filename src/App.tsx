@@ -23,6 +23,7 @@ import Metodologia from "./pages/Metodologia";
 import Tecnologias from "./pages/Tecnologias";
 import CasosExito from "./pages/CasosExito";
 import ProcesoTrabajo from "./pages/ProcesoTrabajo";
+import Checkout from "./pages/Checkout";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/productos" element={<Productos />} />
           <Route path="/formulario" element={<Formulario />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/checkout" element={<Checkout />} />
           
           {/* Rutas para las secciones de Quiénes Somos */}
           <Route path="/nuestra-mision" element={<NuestraMision />} />
